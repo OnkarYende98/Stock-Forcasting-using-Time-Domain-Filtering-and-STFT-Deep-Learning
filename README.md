@@ -51,6 +51,7 @@ Results
 
 
  The following models are trained on the Nifty 50 (NSEI^) dataset from 2015 to EOD.
+ The user gets the compatibility of working with multiple stocks and indexs by entering the ticker name of the security.
 
  Observations:
 
