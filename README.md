@@ -40,13 +40,15 @@ Architecture includes LSTM layers with dropout regularization and a dense output
 
 The model is trained on sequences of historical data with multivariate features, including raw prices, smoothed values, and frequency-domain features.
 
+Results
 
- Model                 Train RMSE  Test RMSE  Train MAPE  Test MAPE  Train R²  Test R² 
- --------------------  ----------  ---------  ----------  ---------  --------  ------- 
- SAVGOL + STFT + LSTM  233.16      317.28     1.40%       1.12%      0.9958    0.9484  
- STFT + LSTM           183.93      337.64     1.11%       1.18%      0.9974    0.9637  
- SAVGOL + FFT + LSTM   314.76      427.66     1.83%       1.54%      0.9926    0.9410  
- Kalman + STFT + LSTM  232.08      382.59     1.35%       1.31%      0.9959    0.9186  
+| Model                | Train RMSE | Test RMSE | Train MAPE | Test MAPE | Train R² | Test R² |
+| -------------------- | ---------- | --------- | ---------- | --------- | -------- | ------- |
+| SAVGOL + STFT + LSTM | 233.16     | 317.28    | 1.40%      | 1.12%     | 0.9958   | 0.9484  |
+| STFT + LSTM          | 183.93     | 337.64    | 1.11%      | 1.18%     | 0.9974   | 0.9637  |
+| SAVGOL + FFT + LSTM  | 314.76     | 427.66    | 1.83%      | 1.54%     | 0.9926   | 0.9410  |
+| Kalman + STFT + LSTM | 232.08     | 382.59    | 1.35%      | 1.31%     | 0.9959   | 0.9186  |
+
 
  The following models are trained on the Nifty 50 (NSEI^) dataset from 2015 to EOD.
 
